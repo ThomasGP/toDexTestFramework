@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="OFF">
+    <appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{ISO8601} %-5level %-13.13class{1} %message %throwable%n"/>
+        </Console>
+        <File name="AllFile" fileName="logs/messages.log" immediateFlush="true">
+            <PatternLayout pattern="%d{ISO8601} %-5level %-13.13class{1} %message %throwable%n"/>
+        </File>
+        <File name="SummaryFile" fileName="logs/summary.log" immediateFlush="true">
+            <MarkerFilter marker="SUMMARY" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="%d{ISO8601} %-5level %-13.13class{1} %message %throwable%n"/>
+        </File>
+    </appenders>
+    <loggers>
+        <root level="info">
+            <appender-ref ref="Console"/>
+            <appender-ref ref="AllFile"/>
+            <appender-ref ref="SummaryFile"/>
+        </root>
+    </loggers>
+</configuration>
