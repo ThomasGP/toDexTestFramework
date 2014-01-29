@@ -1,7 +1,7 @@
 toDexTestFramework
 ==================
 
-This framework is for testing the *toDex* part of [Soot](https://github.com/sable/soot/tree/develop) (develop branch). For a detailed description (in german) see the master thesis [Generating and testing Dalvik bytecode for Android](http://www.ec-spride.tu-darmstadt.de/csf/sse/teaching_sse/theses_sse/theses_sse.en.jsp). In short, the framework reads Android apps (as .apk files), converts them, and uses the Android emulator to test the converted app. To eliminate testing non-working apps, the untouched .apk file is run on the emulator beforehand. See [this blog post](http://www.bodden.de/2013/01/08/soot-android-instrumentation/) for the general usage of Soot's Android capabilities.
+This framework is for testing the *toDex* part of [Soot](https://github.com/sable/soot/tree/develop) (develop branch). For a detailed description (in german) see the master thesis [Generating and testing Dalvik bytecode for Android](http://www.ec-spride.tu-darmstadt.de/fileadmin/user_upload/2013_Master_Thomas_Pilot.pdf PDF). In short, the framework reads Android apps (as .apk files), converts them, and uses the Android emulator to test the converted app. To eliminate testing non-working apps, the untouched .apk file is run on the emulator beforehand. See [this blog post](http://www.bodden.de/2013/01/08/soot-android-instrumentation/) for the general usage of Soot's Android capabilities.
 
 How to use
 ==========
